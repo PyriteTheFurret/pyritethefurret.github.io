@@ -6,7 +6,13 @@ var sort = {
     "main":[]
 };
 
-if (!isNaN(getValueFromComp("currentTab"))) switchTab(getValueFromComp("currentTab"));
+if (getValueFromComp("firstRun") != "true") {
+    switchTab(0);
+    storeValueOnComp("firstRun","true");
+} else {
+    switchTab(getValueFromComp("currentTab"))
+}
+
 
 //var dataset = getValueFromComp("dataset");
 //var dataOrigin = JSON.parse(getValueFromComp("dataOrigin"));
