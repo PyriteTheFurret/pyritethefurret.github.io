@@ -1,5 +1,5 @@
 var todo = [
-    "Add buttons to remove categories, subcategories, characters and origins.",
+    "Add buttons to remove categories, subcategories and origins.",
     "Allow subcategories to be moved to other categories.",
     "Allow characters to be moved to other subcategories.",
     "Allow characters to be moved to other categories.",
