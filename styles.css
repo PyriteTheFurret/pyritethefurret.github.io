@@ -1,0 +1,60 @@
+body {
+    background-color:#000000;
+    color:#ffffff;
+    font-family:'Courier New', Courier, monospace;
+}
+button {
+    background-color:#000000;
+    color:#ffffff;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 0px;
+    border-bottom:solid #000000 2px;
+    border-right:solid #000000 2px;
+    border-top:solid #404040 2px;
+    border-left:solid #404040 2px;
+}
+button:active {
+    border-radius: 0px;
+    border-bottom:solid #404040 2px;
+    border-right:solid #404040 2px;
+    border-top:solid #000000 2px;
+    border-left:solid #000000 2px;
+}
+#tabSelectorDiv button {
+    width:25%;
+}
+.tabTitle {
+    width:100%;
+    text-align:center;
+}
+.tabTitle strong {
+    font-size:24px;
+}
+#projectLinks button {
+    width:200px;
+    height:200px;
+    background-color:#000000;
+    color:#ffffff;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 0px;
+    border-bottom:solid #404040 5px;
+    border-right:solid #404040 5px;
+    border-top:solid #000000 5px;
+    border-left:solid #000000 5px;
+}
+#projectLinks button:active {
+    border-radius: 0px;
+    border-bottom:solid #000000 5px;
+    border-right:solid #000000 5px;
+    border-top:solid #404040 5px;
+    border-left:solid #404040 5px;
+}
+a:link {
+    color:#00ff00;
+}
+a:visited {
+    color:#ffff00;
+}
+a:active {
+    color:#00ffff;
+}

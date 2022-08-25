@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pyrite's website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Body -->
+        <div style="text-align:right; display:inline-block; width:100%;"><a href="#" onclick="window.location.reload(true);">Refresh</a></div>
+        <div style="text-align:center;">
+            <strong style="font-size:36px;">Pyrite's website</strong>
+        </div><br>
+        <div id="tabSelectorDiv">
+            <button id="tabSelection0" onclick="switchTab(0);" style="color:#000000;background-color:#ffffff;">Home
+            </button><button id="tabSelection1" onclick="switchTab(1);">Projects
+            </button><button id="tabSelection2" onclick="switchTab(2);">Marmite
+            </button><button id="tabSelection3" onclick="switchTab(3);">About
+            </button>
+        </div><br>
+        <div id="tab0">
+            <div class="tabTitle">
+                <strong>Heyo, and welcome!</strong>
+                <p>
+                    My name's Pyrite, and this is my website, where I'll be putting most of my coding projects.<br>
+                    This site was built specifically for a computer, and I'm not sure if I'll make a mobile version of it, so I'd recommend viewing the site on a computer if you have one.<br>
+                    Also, the site is <i>definitely</i> a work in progress. Feel free to report any bugs to me here:<br><br>
+                    Email: <a href="mailto:pyritejhue@gmail.com">pyritejhue@gmail.com</a> (I don't check this email often.)<br>
+                    Discord: <a href="#" onclick="navigator.clipboard.writeText('Pyrite the Furret#8642')">Pyrite the Furret#8642</a> (click to copy)<br>
+                </p>
+            </div>
+        </div>
+        <div id="tab1" style="display:none;">
+            <div class="tabTitle">
+                <strong>Projects</strong>
+            </div><br>
+            <div id="projectLinks" style="text-align:center;">
+                <div style="text-align:center;">
+                    <a href="dataGenerator/dataGenerator.html">
+                        <span>Data Generator</span><br>
+                        <button id="projectLinks-dataGenerator">
+                            <img src="assets/icons/dataGenerator.png" style="width:100%;height:100%;">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="tab2" style="display:none;">
+            <div class="tabTitle">
+                <strong>WIP</strong>
+            </div>
+        </div>
+        <div id="tab3" style="display:none;">
+            <div class="tabTitle">
+                <strong>WIP</strong>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts.js"></script>
+        <script type="text/javascript" src="typescript.min.js"></script>
+        <script type="text/javascript" src="typescript.compile.min.js"></script>
+    </body>
+</html>

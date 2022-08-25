@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="databaseStylesV3.css">
+        <title>Database Thing V4</title>
+    </head>
+    <body>
+        <div id="autoGenDiv">
+            <!-- This is where the auto-generated buttons will go. -->
+            <div id="div">
+                <!-- A -->
+            </div>
+        </div>
+        <br>
+        <div id="mainDataContent">
+            <!-- Data goes here -->
+            <span id="name-1">Name: <span id="name">?????</span><br></span>
+            <span id="firstName-1">First Name: <span id="firstName">?????</span><br></span>
+            <span id="middleName-1">Middle Name: <span id="middleName">?????</span><br></span>
+            <span id="lastName-1">Last Name: <span id="lastName">?????</span><br></span>
+            <br>
+            <div id="imageDivider">
+                <!-- Put the 8 image tags here, plus the missingImage thing in a separate div. -->
+                <img id="image1" onclick="changeImage(1)"><img id="image2" onclick="changeImage(2)"><img id="image3" onclick="changeImage(3)"><img id="image4" onclick="changeImage(4)"><img id="image5" onclick="changeImage(5)"><img id="image6" onclick="changeImage(6)"><img id="image7" onclick="changeImage(7)"><img id="image8" onclick="changeImage(8)">
+                <br><br>
+            </div>
+            <span id="desc-1"><span id="desc">?????</span><br></span>
+            <span id="desc2-1" class="hidden"><span id="desc2">?????</span><br></span>
+            <span id="desc3-1" class="hidden"><span id="desc3">?????</span><br></span>
+            <span id="origin-1" class="hidden">Origin: <span id="origin">?????</span><br></span>
+            <span id="gender-1">Gender: <span id="gender">?????</span><br></span>
+            <span id="species-1">Species: <span id="species">?????</span><br></span>
+            <span id="status-1" class="hidden">Status: <span id="status">?????</span><br></span>
+            <span id="align-1" class="hidden">Alignment: <span id="align">?????</span><br></span>
+            <br>
+        </div>
+        <textarea id="notes" oninput="cookery(this.value)"></textarea>
+        <script type="text/javascript" src="dataGen.js"></script>
+        <!-- <script type="text/javascript"> 
+            document.getElementById("fuckingScript").src = "data" + window.prompt("Enter a dataset name.", "Example") + ".js";
+        </script> -->
+        <script id="fuckingScript" type="text/javascript" src="dataV4.js"></script>
+        <script type="text/javascript" src="databaseScriptsV3.js"></script>
+    </body>
+</html>

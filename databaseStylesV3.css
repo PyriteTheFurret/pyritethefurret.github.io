@@ -1,0 +1,51 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    border: #ffffff solid 5px;
+    height: max-content;
+}
+span {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+p {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+div {
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+}
+div#mainDataContent {
+    text-align: center;
+}
+button {
+    color: #ffffff;
+    background-color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    padding: 0px solid #ffffff;
+    margin: 0px;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border: #ffffff solid 5px;
+}
+#theDivThatContainsEverything {
+    border: #ffffff solid 5px;
+}
+#notes {
+    width: 100%;
+    height: 200px;
+    background-color: #202020;
+    color: #ffffff;
+    resize: none;
+}
