@@ -72,13 +72,6 @@ var theShitlist2 = [];
 var theShitlist3 = [];
 var theShitlist4 = [];
 
-var funkyVariable;
-var audioShit = [];
-for (funkyVariable = 0; funkyVariable < 24; funkyVariable++) {
-    audioShit.push(new Audio("assets/audio/sound" + funkyVariable + ".wav"));
-}
-
-
 var firstAvailable = {};
 
 var dv1;
@@ -436,6 +429,7 @@ function rand(num) {
 }
 
 if (randInt(1,3) == 3) document.getElementById("title").text = "SCData Editor: " + randomTitles[rand(randomTitles.length)];
+else document.getElementById.getElementById("title").text = "SCData Editor [ALPHA]"
 
 function onDragStart(event) {
     event.dataTransfer.setData('text/plain', event.target.id);
