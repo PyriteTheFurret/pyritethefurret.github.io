@@ -10,7 +10,7 @@ if (getValueFromComp("firstRun") != "true") {
     switchTab(0);
     storeValueOnComp("firstRun","true");
 } else {
-    switchTab(getValueFromComp("currentTab"))
+    //switchTab(getValueFromComp("currentTab"))
 }
 
 
