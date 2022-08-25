@@ -13,7 +13,6 @@ if (getValueFromComp("firstRun") != "true") {
     //switchTab(getValueFromComp("currentTab"))
 }
 
-
 //var dataset = getValueFromComp("dataset");
 //var dataOrigin = JSON.parse(getValueFromComp("dataOrigin"));
 //var data = JSON.parse(getValueFromComp("data"));
