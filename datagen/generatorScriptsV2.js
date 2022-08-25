@@ -71,7 +71,6 @@ var theShitlist = [];
 var theShitlist2 = [];
 var theShitlist3 = [];
 var theShitlist4 = [];
-
 var firstAvailable = {};
 
 var dv1;
