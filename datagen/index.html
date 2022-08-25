@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="generatorStyles.css">
+        <link rel="icon" href="../assets/icons/dataGenerator.png">
+        <title id="title">Pyrite's Data Editor (ALPHA)</title>
+    </head>
+    <body>
+        <div><div style="display:inline-block; width:50%;"><a href="../index.html">&lt;&lt; Back to main page</a></div><div style="text-align:right; display:inline-block; width:50%;"><a href="#" onclick="window.location.reload(true);">Refresh</a></div></div>
+        <div style="text-align:center;"><strong style="font-size:36px;">Pyrite's Data Editor</strong></div>
+        <div id="selectionDiv">
+            <button id="tabSelection0" onclick="switchTab(0)" style="color:#202020; background-color:#ffffff;">Edit Character Data
+            </button><button id="tabSelection1" onclick="switchTab(1)" style="color:#ffffff; background-color:#202020;">Manage Categories
+            </button><button id="tabSelection2" onclick="switchTab(2)" style="color:#ffffff; background-color:#202020;">Manage Origins
+            </button><button id="tabSelection3" onclick="switchTab(3)" style="color:#ffffff; background-color:#202020;">Preview Dataset
+            </button><button id="tabSelection4" onclick="switchTab(4)" style="color:#ffffff; background-color:#202020;">Import and Export
+            </button><button id="tabSelection5" onclick="switchTab(5)" style="color:#ffffff; background-color:#202020;">Settings
+            </button><button id="tabSelection6" onclick="switchTab(6)" style="color:#ffffff; background-color:#202020; display:none;">Dev Options
+            </button>
+        </div><br>
+        <div id="tab0">
+            <!-- Put a GUI here -->
+            <!--
+                My current plan:
+                    First row:
+                        - Button that adds a new category
+                        - Button that adds a new subcategory
+                        - Button that adds a new character
+                        - Button that adds an origin
+                    Second row:
+                        - Currently selected category (Dropdown)
+                        +++ A way to change the name of the currently selected category
+                            [ISSUE: NAMED CATEGORIES NOT IMPLEMENTED YET]
+                        - Currently selected subcategory (Dropdown)
+                        +++ A way to change the name of the currently selected subcategory
+                            [ISSUE: NAMED SUBCATEGORIES NOT IMPLEMENTED YET]
+                        - Currently selected character (Dropdown)
+                    Main area:
+                        - Character name button label
+                        - Currently selected origin (Dropdown)
+                        - All of the data stuff
+                        - For the images, say to put a comma between each image URL
+                Foreseen issues:
+                    - Categories and subcategories without any characters in them
+                        + Possible fix: add a "none" option for the subcategory and character dropdowns
+            -->
+            <div class="tabTitleDiv"><strong class="tabTitle">Edit Character Data</strong></div><br>
+            <div id="guiDiv1-row1">
+                <select id="currentCategory" oninput="hhhhh1()">
+                </select><select id="currentSubcategory" oninput="hhhhh2()">
+                </select><select id="currentCharacter" oninput="hhhhh3()">
+                </select><select id="currentOrigin" oninput="hhhhh4()">
+                </select>
+            </div>
+            <div id="originButtonDiv"></div>
+            <div id="dataDiv">
+                <div class="block50">
+                    <strong style="font-size:24px;">Basic Info</strong><br>
+                    <span style="font-size:12px;">Most normal info can be stored here.<br><br></span>
+                    <div class="block50">
+                        <span>Name:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="name"><br><br>
+                        <span>First Name:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="firstName"><br><br>
+                        <span>Middle Name:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="middleName"><br><br>
+                        <span>Last Name:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="lastName"><br><br>
+                        <span>Origin:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="origin"><br><br>
+                        <span>Notes:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="notes"><br><br>
+                    </div><div class="block50">
+                        <span>Gender:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="gender"><br><br>
+                        <span>Species:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="species"><br><br>
+                        <span>Status:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="status"><br><br>
+                        <span>Alignment:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="align"><br><br>
+                        <span>Birthday:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="birthday"><br><br>
+                        <span>Extras:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="38" id="extras"><br><br>
+                    </div><div>
+                        <span>Description:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="desc"><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="desc2"><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="desc3"><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="desc4"><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="desc5"><br>
+                    </div>
+                </div><div class="block50">
+                    <div class="block">
+                        <strong style="font-size:24px;">Images</strong><br>
+                        <span style="font-size:12px;">(Each image slot can have multiple images, put a comma between the image URLs that are in the same slot)</span><br>
+                        <span>Image 1:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="image1"><br><br>
+                        <span>Image 2:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="image2"><br><br>
+                        <span>Image 3:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="image3"><br><br>
+                        <span>Image 4:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="image4"><br><br>
+                        <span>Image 5:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="image5"><br><br>
+                        <span>Image 6:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="image6"><br><br>
+                        <span>Image 7:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="image7"><br><br>
+                        <span>Image 8:</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="image8"><br><br>
+                        <span>Extra Images (Only visible in the editor):</span><br>
+                        <input type="text" oninput="inpoot(this.id, this.value)" size="78" id="images"><br>
+                    </div><br><div>
+                    </div>
+                </div>
+                <div id="imageDiv">
+                    <div class="block125">
+                        <img id="img1" src="../assets/images/unknown/white.png" onclick="changeImage(1)"><br>
+                        <span id="iposs1">0</span><span> of </span><span id="ipose1">0</span>
+                    </div>
+                    <div class="block125">
+                        <img id="img2" src="../assets/images/unknown/white.png" onclick="changeImage(2)"><br>
+                        <span id="iposs2">0</span><span> of </span><span id="ipose2">0</span>
+                    </div>
+                    <div class="block125">
+                        <img id="img3" src="../assets/images/unknown/white.png" onclick="changeImage(3)"><br>
+                        <span id="iposs3">0</span><span> of </span><span id="ipose3">0</span>
+                    </div>
+                    <div class="block125">
+                        <img id="img4" src="../assets/images/unknown/white.png" onclick="changeImage(4)"><br>
+                        <span id="iposs4">0</span><span> of </span><span id="ipose4">0</span>
+                    </div>
+                    <div class="block125">
+                        <img id="img5" src="../assets/images/unknown/white.png" onclick="changeImage(5)"><br>
+                        <span id="iposs5">0</span><span> of </span><span id="ipose5">0</span>
+                    </div>
+                    <div class="block125">
+                        <img id="img6" src="../assets/images/unknown/white.png" onclick="changeImage(6)"><br>
+                        <span id="iposs6">0</span><span> of </span><span id="ipose6">0</span>
+                    </div>
+                    <div class="block125">
+                        <img id="img7" src="../assets/images/unknown/white.png" onclick="changeImage(7)"><br>
+                        <span id="iposs7">0</span><span> of </span><span id="ipose7">0</span>
+                    </div>
+                    <div class="block125">
+                        <img id="img8" src="../assets/images/unknown/white.png" onclick="changeImage(8)"><br>
+                        <span id="iposs8">0</span><span> of </span><span id="ipose8">0</span>
+                    </div>
+                </div><br>
+                <div id="characterOptions">
+                    <button id="editCharacterName" onclick="editCharacterName()">Edit Character Name
+                    </button><button id="deleteCharacter" onclick="deletus('character')">Delete Character
+                    </button>
+                </div>
+            </div>
+        </div><div id="tab1" style="display:none;">
+            <div class="tabTitleDiv"><strong class="tabTitle">Manage Categories</strong></div><br>
+            <div id="guiDiv2-row1">
+                <button id="addCategory" onclick="create(0);">Create Category
+                </button><button id="addSubcategory" onclick="create(1);">Create Subcategory
+                </button><button id="addCharacter" onclick="create(2);">Create Character
+                </button>
+            </div><br>
+            <div id="tab1info">
+                <span>Use the <strong>up</strong> and <strong>down</strong> arrow keys or <strong>W</strong> and <strong>S</strong> to move the currently selected item around.</span>
+            </div><br>
+            <div>
+                <span>Label of selected item (this is editable): </span><input id="labelThing" oninput="labelCheck();">
+            </div><br>
+            <div id="organizationDiv" style="display:table-cell;width:100%;">
+                <!-- -->
+            </div><br><br><br>
+            <div><button id="orgConfirm" onclick="save();">Save Changes</button></div>
+        </div><div id="tab2" style="display:none;">
+            <!-- Origin stuff -->
+            <div class="tabTitleDiv"><strong class="tabTitle">Manage Origins</strong></div><br>
+            <button id="addOrigin" onclick="create(3);">Create Origin</button>
+        </div><div id="tab3" style="display:none;">
+            <!-- Preview window -->
+            <div id="refreshPreviewDiv" style="text-align:center;"><button id="refreshPreview" onclick="refreshPreview();">Refresh Preview</button></div>
+            <div id="previewWindow">
+                <div id="pAutoGenDiv">
+                    <!-- This is where the auto-generated buttons will go. -->
+                    <div id="pDiv">
+                        <!-- A -->
+                    </div>
+                </div>
+                <br>
+                <div id="pMainDataContent">
+                    <!-- Data goes here -->
+                    <span id="pname-1">Name: <span id="pname">?????</span><br></span>
+                    <span id="pfirstName-1">First Name: <span id="pfirstName">?????</span><br></span>
+                    <span id="pmiddleName-1">Middle Name: <span id="pmiddleName">?????</span><br></span>
+                    <span id="plastName-1">Last Name: <span id="plastName">?????</span><br></span>
+                    <br>
+                    <div id="pImageDivider">
+                        <!-- Put the 8 image tags here, plus the missingImage thing in a separate div. -->
+                        <img id="pImage1" onclick="pChangeImage(1)"><img id="pImage2" onclick="pChangeImage(2)"><img id="pImage3" onclick="pChangeImage(3)"><img id="pImage4" onclick="pChangeImage(4)"><img id="pImage5" onclick="pChangeImage(5)"><img id="pImage6" onclick="pChangeImage(6)"><img id="pImage7" onclick="pChangeImage(7)"><img id="pImage8" onclick="pChangeImage(8)">
+                        <br><br>
+                    </div>
+                    <span id="pdesc-1"><span id="pdesc">?????</span><br></span>
+                    <span id="pdesc2-1" class="phidden"><span id="pdesc2">?????</span><br></span>
+                    <span id="pdesc3-1" class="phidden"><span id="pdesc3">?????</span><br></span>
+                    <span id="porigin-1" class="phidden">Origin: <span id="porigin">?????</span><br></span>
+                    <span id="pgender-1">Gender: <span id="pgender">?????</span><br></span>
+                    <span id="pspecies-1">Species: <span id="pspecies">?????</span><br></span>
+                    <span id="pstatus-1" class="phidden">Status: <span id="pstatus">?????</span><br></span>
+                    <span id="palign-1" class="phidden">Alignment: <span id="palign">?????</span><br></span>
+                    <br>
+                </div>
+                <textarea id="pNotes" oninput="pcookery(this.value)"></textarea>
+                <!--
+                <script type="text/javascript" src="dataGen.js"></script>
+                -->
+                <!-- <script type="text/javascript"> 
+                    document.getElementById("fuckingScript").src = "data" + window.prompt("Enter a dataset name.", "Example") + ".js";
+                </script> -->
+                <!--
+                <script id="fuckingScript" type="text/javascript" src="dataV4.js"></script>
+                <script type="text/javascript" src="databaseScriptsV3.js"></script>
+                -->
+            </div>
+        </div><div id="tab4" style="display:none;">
+            <!-- Put the output-related stuff here -->
+            <div class="tabTitleDiv"><strong class="tabTitle">Import and Export</strong></div><br>
+            <textarea id="inputTextarea"></textarea><br>
+            <input id='fileInput' type="file" accept=".txt,.scd" style="display: none;" oninput="checkFile();">
+            <button onclick="document.getElementById('fileInput').click();">Import from Text File</button><br>
+            <textarea id="outputTextarea"></textarea><br>
+            <button onclick="exportAs(0)" style="float:left;">Export as Copyable Text
+            </button><button onclick="exportAs(1);" style="float:left;">Export as File
+            </button><br>
+        </div><div id="tab5" style="display:none;">
+            <!-- Settings. -->
+            <div class="tabTitleDiv"><strong class="tabTitle">Settings</strong></div><br>
+            <div id="settingsDiv">
+            </div><br>
+        </div><div id="tab6" style="display:none;">
+            <!-- Debug settings. Obviously, this won't be visible normally. -->
+            <div class="tabTitleDiv"><strong class="tabTitle">Dev Options</strong></div><br>
+            <div id="backupButtons">
+                <button onclick="setBackup(1);">Save to Slot 1
+                </button><button onclick="setBackup(2);">Save to Slot 2
+                </button><button onclick="setBackup(3);">Save to Slot 3
+                </button><button onclick="setBackup(4);">Save to Slot 4
+                </button><button onclick="setBackup(5);">Save to Slot 5
+                </button><button onclick="setBackup(6);">Save to Slot 6
+                </button><button onclick="loadBackup(1);">Load from Slot 1
+                </button><button onclick="loadBackup(2);">Load from Slot 2
+                </button><button onclick="loadBackup(3);">Load from Slot 3
+                </button><button onclick="loadBackup(4);">Load from Slot 4
+                </button><button onclick="loadBackup(5);">Load from Slot 5
+                </button><button onclick="loadBackup(6);">Load from Slot 6
+                </button>
+            </div><br>
+            <div id="errorLogDiv" style="text-align:center;">
+                <strong style="font-size:24px;">Error Log</strong><br>
+                <div id="errorLog" style="width:100%;border:solid #ffffff 2px;font-size:14px;text-align:left;">
+                    <br>
+                    <!-- Errors will be sent here. -->
+                </div>
+            </div><br>
+            <div id="todo" style="text-align:center;">
+            </div><br>
+            <div id="currentBugs" style="text-align:center;">
+            </div>
+        </div><br>
+        <div id="emergencyErrorLog" style="width:100%;border:solid #ffffff 2px;font-size:14px;text-align:left;display:none;">
+            <br>
+            <!-- Errors will be sent here. -->
+        </div>
+        <div id="footerThingy" style="text-align:right;font-size:10px;">
+            <span>Made by Pyrite :D</span><br>
+            <span>
+                For questions, bug reports and stuff like that, you can contact me <a href="mailto:pyritejhue@gmail.com">here</a>.
+            </span>
+        </div>
+        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+        <!--<script type="text/javascript" src="data.js"></script>-->
+        <!--<script type="text/javascript" src="dataGenerationV2.js"></script>-->
+        <script type="text/javascript" src="thisDatasetThing.js"></script>
+        <script type="text/javascript" src="vitalGenScripts.js"></script>
+        <script type="text/javascript" src="generatorScriptsV2.js"></script>
+        <script type="text/javascript" src="previewScripts.js"></script>
+        <!--<script type="text/javascript" src="previewWindowDataGenV2.js"></script>
+        <script type="text/javascript" src="previewWindowScriptsV2.js"></script>
+        <script type="text/javascript" src="dataStuff.js"></script>-->
+        <script type="text/javascript" src="todo.js"></script>
+        <!--<script type="text/javascript" src="../typescript.min.js"></script>-->
+        <!--<script type="text/javascript" src="../typescript.compile.min.js"></script>-->
+    </body>
+</html>
