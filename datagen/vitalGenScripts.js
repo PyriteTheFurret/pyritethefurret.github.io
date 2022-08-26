@@ -44,8 +44,6 @@ function addShrek(fuckingHell) {
     } else document.body.append(shrek);
 }
 
-
-
 function logError(err, source, params) {
     var emBuild = {
         "message":[
