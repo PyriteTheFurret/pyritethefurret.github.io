@@ -5,13 +5,13 @@ var sort = {
     "characters":[],
     "main":[]
 };
-
+/*
 if (getValueFromComp("firstRun") != "true") {
     switchTab(0);
     storeValueOnComp("firstRun","true");
 } else {
     //switchTab(getValueFromComp("currentTab"))
-}
+}*/
 
 //var dataset = getValueFromComp("dataset");
 //var dataOrigin = JSON.parse(getValueFromComp("dataOrigin"));
