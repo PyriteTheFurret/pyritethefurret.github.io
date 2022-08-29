@@ -842,7 +842,7 @@ function moveItem(key) {
             if (key == 1 && currentPos == sort["characters"][corgi[0]][corgi[1]].length - 1) {
                 if (corgi[1] < data[corgi[0]].length - 1) {
                     //Move it to the first entry of the next category
-                    newPos = corgi[0] + 1;
+                    newPos = corgi[1] + 1;
                     var tempMove = data[corgi[0]][corgi[1]].splice(currentPos, 1);
                     data[corgi[0]][newPos].splice(0, 0, tempMove[0]);
                     /*var tempMove = labels[1][corgi[0]].splice(currentPos, 1);
