@@ -890,7 +890,6 @@ function findDaPath(id) {
     else if (genButtonType == "subcategory") var dnd = [pathfinder[1],pathfinder[2]];
     else var dnd = [pathfinder[1],pathfinder[2],pathfinder[3]];
 }
-alert("e");
 function create(type) {
     switch (type) {
         case 0:
