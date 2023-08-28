@@ -63,9 +63,11 @@ audio::-webkit-media-controls-panel {
     color:#00ff00;
 }
 audio::-webkit-media-controls-play-button {
+    background-color:#808080;
     color:#00ff00;
 }
 audio::-webkit-media-controls-mute-button {
+    background-color:#808080;
     color:#00ff00;
 }
 audio::-webkit-media-controls-current-time-display,audio::-webkit-media-controls-time-remaining-display {
@@ -73,8 +75,10 @@ audio::-webkit-media-controls-current-time-display,audio::-webkit-media-controls
     font-family:'Courier New', Courier, monospace;
 }
 audio::-webkit-media-controls-volume-slider {
+    background-color:#808080;
     color:#00ff00;
 }
 audio::-webkit-media-controls-timeline {
+    background-color:#808080;
     color:#00ff00;
 }
