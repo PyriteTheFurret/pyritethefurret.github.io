@@ -59,9 +59,5 @@ a:active {
     color:#00ffff;
 }
 audio::-webkit-media-controls-panel {
-    background-color:#404040;
-}
-audio::-webkit-media-controls-play-button,audio::-webkit-media-controls-mute-button {
     background-color:#808080;
-    border-radius:50%;
 }
