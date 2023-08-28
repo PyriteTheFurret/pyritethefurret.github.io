@@ -62,7 +62,7 @@ audio::-webkit-media-controls-panel {
     background-color:#808080;
 }
 .musicRow div {
-    width:25%;
+    width:20%;
     text-align:center;
     font-size:16px;
 }
@@ -70,5 +70,5 @@ audio::-webkit-media-controls-panel {
     font-size:18px;
 }
 .musicRow div audio {
-    width:100%;
+    width:90%;
 }
