@@ -58,3 +58,6 @@ a:visited {
 a:active {
     color:#00ffff;
 }
+audio::-webkit-media-controls-panel {
+    background-color:#808080;
+}
