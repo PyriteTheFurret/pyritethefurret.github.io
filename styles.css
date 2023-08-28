@@ -60,4 +60,5 @@ a:active {
 }
 audio::-webkit-media-controls-panel {
     background-color:#404040;
+    color:#00ff00;
 }
