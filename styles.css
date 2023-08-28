@@ -60,19 +60,16 @@ a:active {
 }
 audio::-webkit-media-controls-panel {
     background-color:#404040;
-    color:#00ff00;
 }
 audio::-webkit-media-controls-play-button {
     background-color:#808080;
-    color:#00ff00;
 }
 audio::-webkit-media-controls-mute-button {
     background-color:#808080;
-    color:#00ff00;
 }
 audio::-webkit-media-controls-current-time-display,audio::-webkit-media-controls-time-remaining-display {
-    color:#00ff00;
     font-family:'Courier New', Courier, monospace;
+    color:#00ff00;
 }
 audio::-webkit-media-controls-volume-slider {
     background-color:#808080;
