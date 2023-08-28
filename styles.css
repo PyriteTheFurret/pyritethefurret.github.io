@@ -61,3 +61,11 @@ a:active {
 audio::-webkit-media-controls-panel {
     background-color:#808080;
 }
+.musicRow div {
+    width:25%;
+    text-align:center;
+    font-size:18px;
+}
+.musicRow div audio {
+    width:100%;
+}
