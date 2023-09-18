@@ -3,7 +3,7 @@
     <head>
         <title>Pyrite's website</title>
         <meta content="Pyrite's Website" property="og:title" />
-        <meta content="sample text" property="og:description" />
+        <meta content="&quot;The applied mods require your game to re-launch.&quot; :|" property="og:description" />
         <meta content="https://pyritethefurret.github.io" property="og:url" />
         <!--<meta content="https://embed.com/embedimage.png" property="og:image" />-->
         <meta content="#00ff00" data-react-helmet="true" name="theme-color" />
@@ -52,280 +52,40 @@
             <div class="tabTitle">
                 <strong>Music</strong>
             </div><br>
+            <!--
+                NEW MUSIC PLAYER
+
+                Plan: have an audio element in the middle of the player, with buttons to switch songs and albums, and a tracklist below the music player.
+                    Later on, replace the default audio element with a custom-made audio player.
+                    
+                    [  <==  ] [      ALBUM      ] [  ==>  ]
+                    [   <   ] [      SONG       ] [   >   ]
+                    |              Song Name              |
+                    |             Album Name              |
+                    |                Tags                 |
+                    | 0:00 / 0:00 --------0-------------- |
+
+                    --------------------------------------------------
+            -->
             <div id="musicDiv">
-                <!-- Music row 1 -->
-                <div class="musicRow">
-                    <div>
-                        <b>"Not Okay"</b><br>
-                        Album: Fractured<br>
-                        Lyrical<br><br>
-                        <audio controls>
-                            <source src="assets/audio/fractured-01-not-okay.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Childhood Memories"</b><br>
-                        Album: Fractured<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/fractured-02-childhood-memories-instrumental.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Radio"</b><br>
-                        Album: Fractured<br>
-                        Lyrical<br><br>
-                        <audio controls>
-                            <source src="assets/audio/fractured-03-radio.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Were They Really?"</b><br>
-                        Album: Fractured<br>
-                        Instrumental, WIP<br><br>
-                        <audio controls>
-                            <source src="assets/audio/fractured-04-were-they-really-wip.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Antagonist"</b><br>
-                        Album: Fractured<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/fractured-06-antagonist.mp3">
-                        </audio>
-                    </div>
+                <div id="musicPlayerDiv">
+                    <button id="btnPrevAlbum" onclick="changeMusicPlayer(-2);">&nbsp;&lt; [K] PRV&nbsp;</button><button id="btnAlbumLabel">(1/4) Fractured</button><button id="btnNextAlbum" onclick="changeMusicPlayer(-1);">&nbsp;NXT [I] &gt;&nbsp;</button><br>
+                    <button id="btnPrevSong" onclick="changeMusicPlayer(0);">&nbsp;&lt; [J] PRV&nbsp;</button><button id="btnSongLabel">(1/8) Not Okay</button><button id="btnNextSong" onclick="changeMusicPlayer(1);">&nbsp;NXT [L] &gt;&nbsp;</button><br>
+                    <br>
+                    <strong id="strongSongName">Not Okay</strong><br>
+                    Album: <span id="spanAlbumName">Fractured</span><br>
+                    Tags: <span id="spanTags">Lyrical</span><br>
+                    <br>
+                    <!--<input type="range"><br>-->
+                    <audio controls id="theJams">
+                        <source id="srcJams" src="assets/audio/fractured-01-not-okay.mp3" type="audio/mpeg">
+                    </audio>
                     <br><br>
                 </div>
-                <!-- Music row 2 -->
-                <div class="musicRow">
-                    <div>
-                        <b>"Dysfunction Junction"</b><br>
-                        Album: Fractured<br>
-                        Instrumental, WIP<br><br>
-                        <audio controls>
-                            <source src="assets/audio/fractured-07-dysfunction-junction-instrumental.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Fractured"</b><br>
-                        Album: Fractured<br>
-                        Lyrical, WIP<br><br>
-                        <audio controls>
-                            <source src="assets/audio/fractured-09-fractured-wip.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"To Deal With Death"</b><br>
-                        Album: Fractured<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/fractured-10-to-deal-with-death-wip.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Title Screen"</b><br>
-                        Album: Cerulean<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/cerulean-00-title-screen.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Lost to the Waves"</b><br>
-                        Album: Cerulean<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/cerulean-01-lost-to-the-waves.mp3">
-                        </audio>
-                    </div>
-                    <br><br>
-                </div>
-                <div class="musicRow">
-                    <div>
-                        <b>"Torrents of Torment"</b><br>
-                        Album: Cerulean<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/cerulean-02-torrents-of-torment.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Scoundrels!"</b><br>
-                        Album: Cerulean<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/cerulean-03-scoundrels.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Cold Before the Storm"</b><br>
-                        Album: Cerulean<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/cerulean-04-cold-before-the-storm.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Meltdown"</b><br>
-                        Album: Cerulean<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/cerulean-05-meltdown.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Scorching Memories"</b><br>
-                        Album: Cerulean<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/cerulean-06-scorching-memories.mp3">
-                        </audio>
-                    </div>
-                </div>
-                <div class="musicRow">
-                    <div>
-                        <b>"Up in Flames"</b><br>
-                        Album: Cerulean<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/cerulean-07-up-in-flames.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Depressing-Ass Plains"</b><br>
-                        Album: Cerulean<br>
-                        Instrumental, WIP<br><br>
-                        <audio controls>
-                            <source src="assets/audio/cerulean-08-depressing-ass-plains-wip.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Buy!"</b><br>
-                        Album: Cerulean<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/cerulean-buy.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Don't Have the Heart"</b><br>
-                        Album: none<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/dont-have-the-heart.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Hidden Cavern"</b><br>
-                        Album: none<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/hidden-cavern.mp3">
-                        </audio>
-                    </div>
-                </div>
-                <div class="musicRow">
-                    <div>
-                        <b>"The Beast of Desolation"</b><br>
-                        Album: none<br>
-                        Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/the-beast-of-desolation.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Don't Ever Forget... (Remix)"</b><br>
-                        Album: none<br>
-                        Remix, Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/dont-ever-forget-remix.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"In The Morning Sun (Remix)"</b><br>
-                        Album: none<br>
-                        Remix, Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/in-the-morning-sun-remix.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"It Sees Everything (Remix)"</b><br>
-                        Album: none<br>
-                        Remix, Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/it-sees-everything-remix.mp3">
-                        </audio>
-                    </div><div>
-                        <b>"Threat - Outskirts (Remix)"</b><br>
-                        Album: none<br>
-                        Remix, Instrumental<br><br>
-                        <audio controls>
-                            <source src="assets/audio/outskirts-threat-remix.mp3">
-                        </audio>
-                    </div>
-                </div>
-                <div class="musicRow">
-                    <div>
-                        <b>Scattered and Lost (Remix)</b><br>
-                        Album: none<br>
-                        Remix, Instrumental, WIP<br><br>
-                        <audio controls>
-                            <source src="assets/audio/scattered-and-lost-remix-wip.mp3">
-                        </audio>
-                    </div><!--<div>
-                        <b>title</b><br>
-                        Album: album<br>
-                        tags<br><br>
-                        <audio controls>
-                            <source src="assets/audio">
-                        </audio>
-                    </div><div>
-                        <b>title</b><br>
-                        Album: album<br>
-                        tags<br><br>
-                        <audio controls>
-                            <source src="assets/audio">
-                        </audio>
-                    </div><div>
-                        <b>title</b><br>
-                        Album: album<br>
-                        tags<br><br>
-                        <audio controls>
-                            <source src="assets/audio">
-                        </audio>
-                    </div><div>
-                        <b>title</b><br>
-                        Album: album<br>
-                        tags<br><br>
-                        <audio controls>
-                            <source src="assets/audio">
-                        </audio>
-                    </div>
-                </div>-->
-                <!--
-                <div class="musicRow">
-                    <div>
-                        <b>title</b><br>
-                        Album: album<br>
-                        tags<br><br>
-                        <audio controls>
-                            <source src="assets/audio">
-                        </audio>
-                    </div><div>
-                        <b>title</b><br>
-                        Album: album<br>
-                        tags<br><br>
-                        <audio controls>
-                            <source src="assets/audio">
-                        </audio>
-                    </div><div>
-                        <b>title</b><br>
-                        Album: album<br>
-                        tags<br><br>
-                        <audio controls>
-                            <source src="assets/audio">
-                        </audio>
-                    </div><div>
-                        <b>title</b><br>
-                        Album: album<br>
-                        tags<br><br>
-                        <audio controls>
-                            <source src="assets/audio">
-                        </audio>
-                    </div><div>
-                        <b>title</b><br>
-                        Album: album<br>
-                        tags<br><br>
-                        <audio controls>
-                            <source src="assets/audio">
-                        </audio>
-                    </div>
-                </div>
-                -->
             </div>
+            <br>
+            <br>
+            <br>
         </div>
         <div id="tab3" style="display:none;">
             <div class="tabTitle">
@@ -342,7 +102,5 @@
             </p>
         </footer>
         <script type="text/javascript" src="scripts.js"></script>
-        <script type="text/javascript" src="typescript.min.js"></script>
-        <script type="text/javascript" src="typescript.compile.min.js"></script>
     </body>
 </html>

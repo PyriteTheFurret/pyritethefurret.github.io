@@ -22,6 +22,7 @@ button:active {
 }
 #tabSelectorDiv button {
     width:25%;
+    font-size:large;
 }
 .tabTitle {
     width:100%;
@@ -77,3 +78,44 @@ audio::-webkit-media-controls-panel {
 .musicRow div audio {
     width:90%;
 }
+
+/* New music player stuff */
+#tab2 div {
+    text-align:center;
+}
+#musicDiv {
+    text-align: center;
+    display:flex;
+    justify-content:center;
+}
+#musicPlayerDiv {
+    font-size:larger;
+    border:#ffffff solid 5px;
+    width: fit-content;
+    justify-content:center;
+}
+#musicPlayerDiv strong {
+    font-size:x-large;
+}
+#btnPrevAlbum,#btnAlbumLabel,#btnNextAlbum {
+    background-color:#505050;
+}
+#btnPrevSong,#btnSongLabel,#btnNextSong {
+    background-color: #282828;
+}
+/* 14ish pixels per character */
+#btnAlbumLabel,#btnSongLabel {
+    width:570px;
+}
+#musicPlayerDiv button {
+    font-size:larger;
+}
+#theJams {
+    width: 80%;
+}
+/*audio::-webkit-media-controls-timeline {
+    background-color:#ffffff;
+    border-radius:25px;
+    margin-left:10px;
+    margin-right:10px;
+}*/
