@@ -34,6 +34,25 @@ button:active {
     border-top:solid #000000 2px;
     border-left:solid #000000 2px;
 }
+.smallAssDiv {
+    width:75vw;
+    display:inline-block;
+}
+.smallAssDiv div {
+    width:20%;
+    display:inline-block;
+    font-size:large;
+}
+.smallAssDiv div select {
+    width:15vw;
+}
+select {
+    background-color:#404040;
+    color:#ffffff;
+    border:solid #606060 2px;
+    font-family:'Courier New', Courier, monospace;
+    font-size:large;
+}
 u {
     font-size:large;
 }

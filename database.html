@@ -28,15 +28,25 @@
         <div id="wrapper">
             <div id="databaseBorder">
                 <h1>Pyrite's Database</h1>
-                <select name="selCat" id="selCat" onchange="reselect(0,this.value);"></select>
-                <select name="selSub1" id="selSub1" onchange="reselect(1,this.value);"></select>
-                <select name="selSub2" id="selSub2" onchange="reselect(2,this.value);"></select>
-                <select name="selOrig" id="selOrig" onchange="reselect(3,this.value);"></select><br><br>
+                <div class="smallAssDiv">
+                    <div>Category</div>
+                    <div>Subcategory</div>
+                    <div>Character</div>
+                    <div>Origin (AU)</div>
+                </div>
+                <div class="smallAssDiv">
+                    <div><select name="selCat" id="selCat" onchange="reselect(0,this.value);"></select></div>
+                    <div><select name="selSub1" id="selSub1" onchange="reselect(1,this.value);"></select></div>
+                    <div><select name="selSub2" id="selSub2" onchange="reselect(2,this.value);"></select></div>
+                    <div><select name="selOrig" id="selOrig" onchange="reselect(3,this.value);"></select></div>
+                </div><br><br>
                 <span id="spanname"><u>Name</u><br><span id="name"></span><br><br></span>
                 <span id="spanfullname"><u>Full Name</u><br><span id="fullname"></span><br><br></span>
                 <span id="spangender"><u>Gender</u><br><span id="gender"></span><br><br></span>
                 <span id="spanspecies"><u>Species</u><br><span id="species"></span><br><br></span>
+                <span id="spanorigin"><u>Origin</u><br><span id="origin"></span><br><br></span>
                 <span id="spandesc"><u>Description</u><br><span id="desc"></span><br><br></span>
+                <span id="spanowner"><u>Character Owner</u><br><span id="owner"></span><br><br></span>
                 <!--"img"-->
             </div>
         </div>
