@@ -14,10 +14,29 @@
         <meta content="Pyrite's Database (WIP)" property="og:title" />
         <meta content="&quot;I love refridgerators!&quot;" property="og:description" />
         <meta content="https://pyritethefurret.github.io/database.html" property="og:url" />
-        <!--<meta content="https://embed.com/embedimage.png" property="og:image" />-->
+        <!-- If you're reading this, the database page hasn't been publicly released yet. The main site is up but I'm still debugging it (THE MUSIC PART SPECIFICALLY AAAAAAAAAA) -->
+        <!--<meta content="" property="og:image" />-->
         <meta content="#00ff00" data-react-helmet="true" name="theme-color" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script type="text/javascript" src="databaseScripts.js"></script>
+        <script type="text/javascript" src="data.js"></script>
         <link rel="stylesheet" href="databaseStyles.css">
     </head>
+    <body>
+        <!--
+            The body of the document, where the magic happens.
+        -->
+        <h1>Pyrite's Database</h1>
+        <select name="selCat" id="selCat" onchange="reselect(0,this.value);"></select>
+        <select name="selSub1" id="selSub1" onchange="reselect(1,this.value);"></select>
+        <select name="selSub2" id="selSub2" onchange="reselect(2,this.value);"></select>
+        <select name="selOrig" id="selOrig" onchange="reselect(3,this.value);"></select><br><br>
+        <span id="spanname">Name: <span id="name"></span><br></span>
+        <span id="spanfullname">Full Name: <span id="fullname"></span><br></span>
+        <span id="spangender">Gender: <span id="gender"></span><br></span>
+        <span id="spanspecies">Species: <span id="species"></span><br></span>
+        <span id="spandesc">Description: <span id="desc"></span><br></span>
+        <!--"img"-->
+        
+        <script type="text/javascript" src="databaseScripts.js"></script>
+    </body>
 </html>

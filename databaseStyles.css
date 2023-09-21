@@ -1,0 +1,23 @@
+body {
+    background-color:#000000;
+    color:#ffffff;
+    font-family:'Courier New', Courier, monospace;
+    text-align:center;
+}
+button {
+    background-color:#000000;
+    color:#ffffff;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 0px;
+    border-bottom:solid #000000 2px;
+    border-right:solid #000000 2px;
+    border-top:solid #404040 2px;
+    border-left:solid #404040 2px;
+}
+button:active {
+    border-radius: 0px;
+    border-bottom:solid #404040 2px;
+    border-right:solid #404040 2px;
+    border-top:solid #000000 2px;
+    border-left:solid #000000 2px;
+}

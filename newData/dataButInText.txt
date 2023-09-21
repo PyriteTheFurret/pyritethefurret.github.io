@@ -200,93 +200,80 @@ Timelines:
         00.00.18 - Jade
             Jade
 
-        00.00.99 - Unsorted
-            Mary
-            Hazel Sr.
-            Jelly
-            Adam
-            Titan
-            Gally
-            Mythril
+        //00.00.99 - Unsorted
+            // Mary
+            // Hazel Sr.
+            // Jelly
+            // Adam
+            // Titan
+            // Gally
+            // Mythril
 
 
 
-    00. - Other Harcolians
-        00. .99 - Unsorted
-            Flare Wick
-            ????? (Mother of the Wick Family)
-            ????? (Eevee)
-            Shayle (Flareon)
-            ????? (Jolteon)
-            Shel (Vaporeon)
-            ????? (Espeon/Umbreon Mix)
-            Kel (Leafeon)
-            Jem (Glaceon)
-            ????? (Sylveon)
+    00.01 - Harcolians
+            // Flare Wick
+            // ????? (Mother of the Wick Family)
+            // ????? (Eevee)
+            // Shayle (Flareon)
+            // ????? (Jolteon)
+            // Shel (Vaporeon)
+            // ????? (Espeon/Umbreon Mix)
+            // Kel (Leafeon)
+            // Jem (Glaceon)
+            // ????? (Sylveon)
 
-            Quinn
-            Glacoro
-            Jay
-            Alice (Glacoro/Jay's mother)
-            Custard
-            Salami
+            // Quinn
+            // Glacoro
+            // Jay
+            // Alice (Glacoro/Jay's mother)
+            // Custard
+            // Salami
 
-            Aquamire Darson
-            Kari Darson
-            Lilly Valley
-            Milly Valley
-            Antonio (Anthro Drifloon)
-            Chili the Skitty
+            // Aquamire Darson
+            // Kari Darson
+            // Lilly Valley
+            // Milly Valley
+            // Antonio (Anthro Drifloon)
+            // Chili the Skitty
 
-            Fenn
-            Carol (Fenn's mother)
-            Ferlehu
+            // Fenn
+            // Carol (Fenn's mother)
+            // Ferlehu
 
-            Dr. Pikachu
-            Prof. Eevee
-            Gilly
+            // Dr. Pikachu
+            // Prof. Eevee
+            // Gilly
 
-            Duke Ex Magearna [M1/M2]
-            Alex
-            Jackal (Bounty Hunter)
+            // Duke Ex Magearna [M1/M2]
+            // Alex
+            // Jackal (Bounty Hunter)
 
-            Jim (Reshiram)
-            ????? (Zekrom)
-            Kunai (Articuno)
-            ????? (Zapdos Businesswoman)
-            Mace (Moltres Businessman)
+            // Jim (Reshiram)
+            // ????? (Zekrom)
+            // Kunai (Articuno)
+            // ????? (Zapdos Businesswoman)
+            // Mace (Moltres Businessman)
 
-            ????? (Neutral Type Arceus)
-            ????? (Fire Type Arceus)
-            ????? (Water Type Arceus)
-            ????? (Grass Type Arceus)
-            ????? (Electric Type Arceus)
-            ????? (Ice Type Arceus)
-            ????? (Fighting Type Arceus)
-            Arkaeya The Psychic
-            ????? (Poison Type Arceus)
-            ????? (Ground Type Arceus)
-            ????? (Rock Type Arceus)
-            ????? (Flying Type Arceus)
-            ????? (Bug Type Arceus)
-            ????? (Ghost Type Arceus)
-            ????? (Dragon Type Arceus)
-            ????? (Dark Type Arceus)
-            ????? (Steel Type Arceus)
-            ????? (Fairy Type Arceus)
-
-    00. - Post-Harcol, Pre-TGS era OCs
-        00. .99 - Unsorted
-            Dell
-            Vulcan
-            Darkrai
-            Kecleon
-            Pyrute
-            The Evil Cyndaquil
-            Griffin Von Byrd
-            Chad
-            Billingsworth Cash
-            Robert (James)
+        // 00.01.99 - Unsorted
+            // ????? (Neutral Type Arceus)
+            // ????? (Fire Type Arceus)
+            // ????? (Water Type Arceus)
+            // ????? (Grass Type Arceus)
+            // ????? (Electric Type Arceus)
+            // ????? (Ice Type Arceus)
+            // ????? (Fighting Type Arceus)
+            // Arkaeya The Psychic
+            // ????? (Poison Type Arceus)
+            // ????? (Ground Type Arceus)
+            // ????? (Rock Type Arceus)
+            // ????? (Flying Type Arceus)
+            // ????? (Bug Type Arceus)
+            // ????? (Ghost Type Arceus)
+            // ????? (Dragon Type Arceus)
+            // ????? (Dark Type Arceus)
+            // ????? (Steel Type Arceus)
+            // ????? (Fairy Type Arceus)
 
     00. - Jasper Arc OCs
         00. .99 - Unsorted
@@ -304,21 +291,18 @@ Timelines:
             Pseudobane
             Zenith
 
-    00. - Rain World OCs
+    00. - Post-Harcol, Pre-TGS era OCs
         00. .99 - Unsorted
-            Deceptive Glowing Stones (+ Explorer)
-            Heart of Metal
-            The Skield
-            The Augmented
-
-            Survivor woman
-            Monk woman
-            Hunter woman
-            Gourmand woman
-            Artificer woman
-            Spearmaster woman
-            Rivulet woman
-            Saint woman
+            Dell
+            Vulcan
+            Darkrai
+            Kecleon
+            Pyrute
+            The Evil Cyndaquil
+            Griffin Von Byrd
+            Chad
+            Billingsworth Cash
+            Robert (James)
 
     00. - Fragments and other Ethereal-Adjacent OCs
         00. .99 - Unsorted
@@ -337,6 +321,22 @@ Timelines:
             Aqua (Reborn Cobalt's Guardian Voice)
             Talon (Reborn Coffee's Guardian Voice)
 
+    00. - Rain World OCs
+        00. .99 - Unsorted
+            Deceptive Glowing Stones (+ Explorer)
+            Heart of Metal
+            The Skield
+            The Augmented
+
+            Survivor woman
+            Monk woman
+            Hunter woman
+            Gourmand woman
+            Artificer woman
+            Spearmaster woman
+            Rivulet woman
+            Saint woman
+
     00. - Other Game OCs
         00. .99 - Unsorted
             Reuben (Terraria idiot)
@@ -353,7 +353,7 @@ Timelines:
             Vin Ven
             Zote Zeneki
 
-            Ellis
+            Ellis the Enforcer
             ????? (Anthro Lionfish)
 
     00. - 
