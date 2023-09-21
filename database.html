@@ -25,18 +25,21 @@
         <!--
             The body of the document, where the magic happens.
         -->
-        <h1>Pyrite's Database</h1>
-        <select name="selCat" id="selCat" onchange="reselect(0,this.value);"></select>
-        <select name="selSub1" id="selSub1" onchange="reselect(1,this.value);"></select>
-        <select name="selSub2" id="selSub2" onchange="reselect(2,this.value);"></select>
-        <select name="selOrig" id="selOrig" onchange="reselect(3,this.value);"></select><br><br>
-        <span id="spanname">Name: <span id="name"></span><br></span>
-        <span id="spanfullname">Full Name: <span id="fullname"></span><br></span>
-        <span id="spangender">Gender: <span id="gender"></span><br></span>
-        <span id="spanspecies">Species: <span id="species"></span><br></span>
-        <span id="spandesc">Description: <span id="desc"></span><br></span>
-        <!--"img"-->
-        
+        <div id="wrapper">
+            <div id="databaseBorder">
+                <h1>Pyrite's Database</h1>
+                <select name="selCat" id="selCat" onchange="reselect(0,this.value);"></select>
+                <select name="selSub1" id="selSub1" onchange="reselect(1,this.value);"></select>
+                <select name="selSub2" id="selSub2" onchange="reselect(2,this.value);"></select>
+                <select name="selOrig" id="selOrig" onchange="reselect(3,this.value);"></select><br><br>
+                <span id="spanname"><u>Name</u><br><span id="name"></span><br><br></span>
+                <span id="spanfullname"><u>Full Name</u><br><span id="fullname"></span><br><br></span>
+                <span id="spangender"><u>Gender</u><br><span id="gender"></span><br><br></span>
+                <span id="spanspecies"><u>Species</u><br><span id="species"></span><br><br></span>
+                <span id="spandesc"><u>Description</u><br><span id="desc"></span><br><br></span>
+                <!--"img"-->
+            </div>
+        </div>
         <script type="text/javascript" src="databaseScripts.js"></script>
     </body>
 </html>

@@ -61,13 +61,18 @@ function reselect(selectId,changedVal) {
                 break;
             //3 is the origin subcategory
             case 3:
-                var list = ["name","fullname","gender","species","desc"]
+                var list = ["name","fullname","gender","desc"];
                 for (var i = 0; i < list.length; i++) {
                     if (data["data"][curOpt[0]]["data"][curOpt[1]]["data"][curOpt[2]][curOpt[3]][list[i]] != undefined) {
                         document.getElementById("span" + list[i]).style.display = "inline";
                         document.getElementById(list[i]).innerText = data["data"][curOpt[0]]["data"][curOpt[1]]["data"][curOpt[2]][curOpt[3]][list[i]];
                     } else document.getElementById("span" + list[i]).style.display = "none";
                 }
+                //Special cases (Species, origin)
+                if (data["data"][curOpt[0]]["data"][curOpt[1]]["data"][curOpt[2]][curOpt[3]]["species"] != undefined) {
+                    document.getElementById("spanspecies").style.display = "inline";
+                    document.getElementById("species").innerText = data["data"][curOpt[0]]["data"][curOpt[1]]["data"][curOpt[2]][curOpt[3]]["species"].join(", ");
+                } else document.getElementById("spanspecies").style.display = "none";
                 break;
             default:
                 //what the fuck did you do to get here, how

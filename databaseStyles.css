@@ -3,6 +3,19 @@ body {
     color:#ffffff;
     font-family:'Courier New', Courier, monospace;
     text-align:center;
+    margin:0;
+    height:100%;
+    overflow:hidden;
+}
+#wrapper {
+    padding-top:4.5vh;
+}
+#databaseBorder {
+    width:90vw;
+    height:90vh;
+    border:solid #ffffff 0.5vh;
+    display:inline-block;
+    vertical-align: middle;
 }
 button {
     background-color:#000000;
@@ -20,4 +33,7 @@ button:active {
     border-right:solid #404040 2px;
     border-top:solid #000000 2px;
     border-left:solid #000000 2px;
+}
+u {
+    font-size:large;
 }

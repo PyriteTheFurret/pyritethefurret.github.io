@@ -47,7 +47,7 @@ var data = {
                         "fullname":"Pyrite Jade Hue",
                         "desc":"Certified squishy",
                         "img":[],
-                        "gender":"male",
+                        "gender":"Male",
                         "species":["Harcolian Delta Furret","Maritchian Slime [Variant R]"]
                     },
                     // Emerald [ENSIS]
@@ -57,7 +57,7 @@ var data = {
                         "fullname":"Pyrite Emerald Bagels",
                         "desc":undefined,
                         "img":[],
-                        "gender":"female",
+                        "gender":"Female",
                         "species":["Harcolian Delta Furret (ENSIS Timeline Variant)","Maritchian Slime [Variant A]"]
                     },
                     // Pyra [CANTO]
@@ -67,7 +67,7 @@ var data = {
                         "fullname":undefined,
                         "desc":undefined,
                         "img":[],
-                        "gender":undefined,
+                        "gender":"Female",
                         "species":undefined
                     }
                     // Heliotrope [MALUS]
